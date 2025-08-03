@@ -1,0 +1,92 @@
+<html>
+
+<head>
+    <title>Web Accessibility</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* any styles that are here in the page will overwrite any styles in style.css. 
+        So all my accessibility changes will only be on this page*/
+
+        img {
+            float: left;
+            padding: 75px;
+        }
+
+        header {
+            background-color: #76736f;
+            height: 15%;
+            color: #5f6b6b;
+        }
+
+        nav {
+            background-color: #5f6b6b;
+            width: 25%;
+            height: 40%;
+            float: left;
+            color: white;
+        }
+
+        main {
+            background-color: #2e3c3c;
+            height: 75%;
+            color: rgb(61, 58, 60);
+        }
+
+        footer {
+            background-color: #201f1e;
+            clear: both;
+            height: 10%;
+        }
+
+        header h1 {
+            color: dimgray;
+        }
+
+        /* changes the default color of a link that has been visited */
+        a:visited {
+            color: rgb(61, 58, 60);
+        }
+
+        /* changes the default color of a link that has been clicked on but the poage has yet to load */
+        a:active {
+            color: rgb(48, 45, 44);
+        }
+    </style>
+</head>
+
+<body id="myBody">
+    <header id="myHeader">
+        <h2>Web Accesiblity</h2>
+    </header>
+    <nav id="myNav">
+        <a href="http://larguelles3.sb.cis/1715/form-basics.html">Web Form</a><br>
+        <a href="http://larguelles3.sb.cis/1715/grid.html">Grid</a><br>
+        <a href="http://larguelles3.sb.cis/1715/bootstrap.html">Bootstrap</a><br>
+        <a href="http://larguelles3.sb.cis/1715/midterm.html">Midterm</a><br>
+        <a href="http://larguelles3.sb.cis/1715/orgs.html">Organizations</a><br>
+        <a href="http://larguelles3.sb.cis/1715/domain.html">Domain</a><br>
+        <a href="http://larguelles3.sb.cis/1715/ca.html">Certificate Authority</a><br>
+        <!-- I made this a relative link. This can be done with pages on a local site -->
+        <a href="notcool.html">Web Accesiblity</a><br>
+        <!-- I decided to add a link to our site homepage.-->
+        <a href="index.html">Home Page</a><br>
+    </nav>
+    <main id="myMain">
+        <h2>Web Accessibility</h2>
+
+        <p>Web accessibility, or eAccessibility, is the inclusive practice of ensuring there are no barriers that
+            prevent interaction with, or access to, websites on the World Wide Web by people with physical disabilities,
+            situational disabilities, and socio-economic restrictions on bandwidth and speed. When sites are correctly
+            designed, developed and edited, more users have equal access to information and functionality.</p>
+        <h3><a
+                href="https://www.w3schools.com/accessibility/index.php">https://www.w3schools.com/accessibility/index.php</a>
+        </h3>
+        <img src="images/th-3994708690.jpg" alt="">
+    </main>
+    <footer id="myFooter">Laura Arguelles <br>
+        &copy; 2025
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>

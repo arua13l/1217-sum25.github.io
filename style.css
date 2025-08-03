@@ -1,0 +1,43 @@
+/* the styles for the HTML elements */
+
+header {
+    background-color: #DEB887;
+    height: 15%;
+}
+
+nav {
+    background-color: #008B8B;
+    width: 25%;
+    height: 40%;
+    float: left;
+    color: white;
+}
+
+main {
+    background-color: #F0FFFF;
+    height: 75%;
+}
+
+footer {
+    background-color: #FFEBCD;
+    clear: both;
+    height: 10%;
+}
+
+header h1 {
+    color: dimgray;
+}
+
+/* changes the default color of a link that has been visited */
+a:visited {
+    color: rgb(241, 75, 211);
+}
+
+/* changes the default color of a link that has been clicked on but the poage has yet to load */
+a:active {
+    color: orangered;
+}
+
+img {
+    float: right;
+}

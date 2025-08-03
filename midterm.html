@@ -1,0 +1,139 @@
+<html>
+
+<head>
+    <title>Midterm</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        form {
+            /* Just to center the form on the page */
+            margin: 0 auto;
+            width: 400px;
+            /* To see the outline of the form */
+            padding: 1em;
+            border: 1px solid #ccc;
+            border-radius: 1em;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        form li+li {
+            margin-top: 1em;
+        }
+
+        label {
+            /* To make sure that all labels have the same size and are properly aligned */
+            display: inline-grid;
+            width: 120px;
+            text-align: right;
+        }
+
+        input,
+        textarea {
+            /* To make sure that all text fields have the same font settings By default, textareas have a monospace font */
+            font: 1em sans-serif;
+            /* To give the same size to all text fields */
+
+            box-sizing: border-box;
+            /* To harmonize the look & feel of text field border */
+            border: 1px solid #999;
+        }
+
+        input:focus,
+        textarea:focus {
+            /* To give a little highlight on active elements */
+            border-color: #000;
+        }
+
+        input:required:valid {
+            border: 3px solid #0f0;
+        }
+
+        textarea:required:valid {
+            border: 3px solid #0f0;
+        }
+
+        input:invalid {
+            border-color: red;
+        }
+
+        textarea {
+            /* To properly align multiline text fields with their labels */
+            vertical-align: top;
+            /* To give enough room to type some text */
+            height: 5em;
+        }
+
+        .button {
+            /* To position the buttons to the same position of the text fields */
+            padding-left: 90px;
+            /* same size as the label elements */
+        }
+
+        button {
+            /* This extra margin represent roughly the same space as the space between the labels and their text fields */
+            margin-left: 0.5em;
+        }
+
+        #myHeader {
+            font-size: large;
+        }
+
+        #myFooter {
+            font-size: small;
+        }
+    </style>
+</head>
+
+<body id="myBody">
+    <header id="myHeader">
+        <h2>CIS 1715 Midterm</h2>
+    </header>
+    <nav id="myNav">
+        <a href="http://larguelles3.sb.cis/1715/form-basics.html">Web Form</a><br>
+        <a href="http://larguelles3.sb.cis/1715/grid.html">Grid</a><br>
+        <a href="http://larguelles3.sb.cis/1715/bootstrap.html">Bootstrap</a><br>
+        <a href="http://larguelles3.sb.cis/1715/midterm.html">Midterm</a><br>
+    </nav>
+    <main id="myMain">
+        <form action="/success.html">
+            <ul>
+                <li>
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="first_name" required />
+                </li>
+                <li>
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="last_name" required />
+                </li>
+                <li>
+                    <label for="mail">E-mail:</label>
+                    <input type="email" id="mail" name="user_mail" required />
+                </li>
+                <li>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required
+                        placeholder="123-456-7899"> <br>
+                </li>
+                <li>
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment_message" required></textarea>
+                </li>
+                </li>
+                <br>
+                <li class="button">
+                    <button type="submit">Submit</button>
+                </li>
+            </ul>
+        </form>
+    </main>
+    <footer id="myFooter">Laura Arguelles <br>
+        &copy; 2025
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>
